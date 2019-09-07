@@ -1,0 +1,24 @@
+下载完毕篇日志环境变量
+
+git 配置用户名邮箱
+$ git config --global user.name "wyt"  用户名
+$ git config --global user.email "17600187623@163.com"  邮箱 
+
+搭建一个远程仓库
+GitHub.com
+我的GitHub网址
+https://github.com/onlywyt
+
+配置一个免密钥登陆
+
+1 在本地生产SSHkey   发送给远程，一人一份，秘密通道
+
+2 先在本地配置然后发送给远程；命令--> ssh-keygen -t rsa -C 17600187623@163.com
+
+3 生产ssh 地址 c/Users/Lenovo/.ssh/id_rsa.pub.
+打开GitHub -->找到settings--->SSH and GPG keys -->点击 new  title 随便起-->把刚才生产的公钥粘贴进来
+
+4 发给远程 id_rsa 是私钥；发送给远程的是 id_rsa.pub(公共的)
+
+测试连通性 -->[ 固定写法 ]  ssh -T git@github.com
+成功则会在本地目录显示known_hosts 文件
