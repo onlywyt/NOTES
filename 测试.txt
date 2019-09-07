@@ -1,24 +1,48 @@
-ÏÂÔØÍê±ÏÆªÈÕÖ¾»·¾³±äÁ¿
+ä¸‹è½½å®Œæ¯•ç¯‡æ—¥å¿—ç¯å¢ƒå˜é‡
 
-git ÅäÖÃÓÃ»§ÃûÓÊÏä
-$ git config --global user.name "wyt"  ÓÃ»§Ãû
-$ git config --global user.email "17600187623@163.com"  ÓÊÏä 
+git é…ç½®ç”¨æˆ·åé‚®ç®±
+$ git config --global user.name "wyt"  ç”¨æˆ·å
+$ git config --global user.email "17600187623@163.com"  é‚®ç®± 
 
-´î½¨Ò»¸öÔ¶³Ì²Ö¿â
+æ­å»ºä¸€ä¸ªè¿œç¨‹ä»“åº“
 GitHub.com
-ÎÒµÄGitHubÍøÖ·
+æˆ‘çš„GitHubç½‘å€
 https://github.com/onlywyt
 
-ÅäÖÃÒ»¸öÃâÃÜÔ¿µÇÂ½
+é…ç½®ä¸€ä¸ªå…å¯†é’¥ç™»é™†
 
-1 ÔÚ±¾µØÉú²úSSHkey   ·¢ËÍ¸øÔ¶³Ì£¬Ò»ÈËÒ»·İ£¬ÃØÃÜÍ¨µÀ
+1 åœ¨æœ¬åœ°ç”Ÿäº§SSHkey   å‘é€ç»™è¿œç¨‹ï¼Œä¸€äººä¸€ä»½ï¼Œç§˜å¯†é€šé“
 
-2 ÏÈÔÚ±¾µØÅäÖÃÈ»ºó·¢ËÍ¸øÔ¶³Ì£»ÃüÁî--> ssh-keygen -t rsa -C 17600187623@163.com
+2 å…ˆåœ¨æœ¬åœ°é…ç½®ç„¶åå‘é€ç»™è¿œç¨‹ï¼›å‘½ä»¤--> ssh-keygen -t rsa -C 17600187623@163.com
 
-3 Éú²ússh µØÖ· c/Users/Lenovo/.ssh/id_rsa.pub.
-´ò¿ªGitHub -->ÕÒµ½settings--->SSH and GPG keys -->µã»÷ new  title Ëæ±ãÆğ-->°Ñ¸Õ²ÅÉú²úµÄ¹«Ô¿Õ³Ìù½øÀ´
+3 ç”Ÿäº§ssh åœ°å€ c/Users/Lenovo/.ssh/id_rsa.pub.
+æ‰“å¼€GitHub -->æ‰¾åˆ°settings--->SSH and GPG keys -->ç‚¹å‡» new  title éšä¾¿èµ·-->æŠŠåˆšæ‰ç”Ÿäº§çš„å…¬é’¥ç²˜è´´è¿›æ¥
 
-4 ·¢¸øÔ¶³Ì id_rsa ÊÇË½Ô¿£»·¢ËÍ¸øÔ¶³ÌµÄÊÇ id_rsa.pub(¹«¹²µÄ)
+4 å‘ç»™è¿œç¨‹ id_rsa æ˜¯ç§é’¥ï¼›å‘é€ç»™è¿œç¨‹çš„æ˜¯ id_rsa.pub(å…¬å…±çš„)
 
-²âÊÔÁ¬Í¨ĞÔ -->[ ¹Ì¶¨Ğ´·¨ ]  ssh -T git@github.com
-³É¹¦Ôò»áÔÚ±¾µØÄ¿Â¼ÏÔÊ¾known_hosts ÎÄ¼ş
+æµ‹è¯•è¿é€šæ€§ -->[ å›ºå®šå†™æ³• ]  ssh -T git@github.com
+æˆåŠŸåˆ™ä¼šåœ¨æœ¬åœ°ç›®å½•æ˜¾ç¤ºknown_hosts æ–‡ä»¶
+
+
+åœ¨è¿œç¨‹æ–°å»ºé¡¹ç›® -- new repository --> firstremote  --> è¿œç¨‹åœ°å€ https://github.com/onlywyt/firstremote.git 
+å…³è”æœ¬åœ°é¡¹ç›®äºè¿œç¨‹é¡¹ç›®
+git remote add oragin https://github.com/onlywyt/firstremote.git 
+ é»˜è®¤éƒ½æ˜¯ masteråˆ†æ”¯
+è¿›è¡Œé¡¹ç›®äº¤äº’
+1 å‘å¸ƒé¡¹ç›®ï¼Œ
+	æœ¬åœ°åˆ°è¿œç¨‹ï¼›
+	git add.   æŠŠé¡¹ç›®å‘å¸ƒåˆ°æš‚å­˜åŒº
+	git commit -m "æ³¨é‡Š"  æš‚å­˜åŒº-->æœ¬åœ°åˆ†æ”¯
+	git push -u origin master           æ¨é€åˆ°è¿œç¨‹
+	
+2 ä¸‹è½½é¡¹ç›®
+	è¿œç¨‹ä¸‹è½½åˆ°æœ¬åœ°
+	git clone é¡¹ç›®åœ°å€
+
+3 é•¿æœŸç»´æŠ¤
+	æäº¤  ã€æœ¬åœ°æäº¤åˆ°è¿œç¨‹ã€‘ git add.
+			       git commit -m "æ³¨é‡Š"
+			       git push origin master 
+	æ›´æ–° ã€è¿œç¨‹ä¸‹è½½åˆ°æœ¬åœ°ã€‘  git pull
+
+
