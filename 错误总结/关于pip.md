@@ -24,7 +24,7 @@ pip 是 Python 包管理工具，该工具提供了对Python 包的查找、下�
 查看可升级的包
 `pip list -o`
 ## mac 系统升级pip
-- python2 
+- python2 :
 `pip install --upgrade pip `
-- python3
+- python3 :
 `pip3 install --upgrade pip ` 
